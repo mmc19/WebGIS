@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let obj1 = {
+            name: 'fafa',
+            age: 22,
+            call: {
+                a: ['js', 'ts']
+            }
+        };
+        let obj2 = { ...obj1 };
+        obj1.name = 'fafu';
+        obj1.call.a = ['dark']
+        console.log(obj1);
+        console.log(obj2);
+    </script>
+</body>
+
+</html>
